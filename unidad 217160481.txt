@@ -1,0 +1,43 @@
+#include "stdafx.h"
+#include"stdio.h"
+#include "math.h"
+#include<iostream>
+
+
+int main(void)
+{
+	int Numero, cont, i, A, B, C, r;
+	cont = 1;
+	do {
+		i = 1; 
+		A = 0; 
+		B = 1; 
+		C = 0;
+		system("cls");
+		printf("Ingrese un numero del 1 al 10: ");
+		scanf_s("%d", &Numero);
+		do
+		{
+
+			C = A + B;
+			A = B;
+			B = C;
+
+			i = i + 1;
+
+		} while (Numero > i);
+		printf("La serie de fibonacci es: \n %d \n", C);		
+		printf("\n¿Quieres ingresar otro numero? \nSi (1)  \nNo (2)");
+		scanf_s("%d", &r);
+
+		if (r == 1)
+		{
+			cont = 1;
+		}
+		else
+		{
+			return 0;
+		}
+	} while (cont = 1);
+	return 0;
+}
