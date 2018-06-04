@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+#include "stdafx.h"
+#include<iostream>
+
+
+float operacion(int x)
+{
+	while (x != 1)
+	{
+		if (x % 2 == 0)
+		x = x / 2;
+		else
+		x = x * 3 + 1;
+		printf("%d ", x);
+	}
+	return(x);
+}
+int main()
+	{
+		int num, se;
+		printf("ingrese un numero: ");
+		scanf_s("%d", &num);
+		se = operacion(num);
+		printf("\n=> ", se);
+		system("pause()");
+		return 0;
+	}
